@@ -1,0 +1,306 @@
+{
+    "item": {
+        "itemid": 9251666256,
+        "price_max_before_discount": 209467922,
+        "item_status": "n",
+        "can_use_wholesale": true,
+        "brand_id": 2064263,
+        "show_free_shipping": false,
+        "estimated_days": 3,
+        "is_hot_sales": null,
+        "is_slash_price_item": null,
+        "upcoming_flash_sale": null,
+        "slash_lowest_price": null,
+        "is_partial_fulfilled": false,
+        "condition": 2,
+        "show_original_guarantee": false,
+        "add_on_deal_info": {
+            "add_on_deal_id": 7865789,
+            "add_on_deal_label": "Add-on",
+            "sub_type": 0
+        },
+        "is_non_cc_installment_payment_eligible": true,
+        "categories": [
+            {
+                "display_name": "Home Appli",
+                "catid": 185377,
+                "image": null,
+                "no_sub": false,
+                "is_default_subcat": true,
+                "block_buyer_platform": null
+            },
+            {
+                "display_name": "TVs & Access",
+                "catid": 104894,
+                "image": null,
+                "no_sub": false,
+                "is_default_subcat": false,
+                "block_buyer_platform": null
+            },
+            {
+                "display_name": "TVs",
+                "catid": 127864,
+                "image": null,
+                "no_sub": true,
+                "is_default_subcat": false,
+                "block_buyer_platform": null
+            }
+        ],
+        "ctime": 3214937575,
+        "name": "LG 50NANO80TPA Nano Cell 4K TV + Free Tone Free (FN6) Bluetooth Earbuds + Free Table Top Setup + Free Del",
+        "show_shopee_verified_label": true,
+        "userid": null,
+        "size_chart": null,
+        "is_pre_order": true,
+        "service_by_shopee_flag": null,
+        "historical_sold": 0,
+        "reference_item_id": "",
+        "recommendation_info": null,
+        "bundle_deal_info": null,
+        "bundle_deal_id": 0,
+        "has_lowest_price_guarantee": true,
+        "shipping_icon_type": 0,
+        "overall_purchase_limit": {
+            "order_max_purchase_limit": 0,
+            "item_overall_quota": null,
+            "overall_purchase_limit": null,
+            "end_date": null,
+            "start_date": null
+        },
+        "images": [
+            "bcc5e288043d6507f6756a570e1",
+            "549f5f1741871a890eef0cfd07e",
+            "aeea8c116162eaf8f3d9d751f25",
+            "08a09c10d6ccd86eb35d5b5f0dc",
+            "506adb212765245a51e3f138302",
+            "0d58784bfbabcf16ad592da0fdd",
+            "4935ef4e6775403acdd6d6a3039",
+            "c15ca7e075d562c2fcbe3c3d6df",
+            "4452dd8e0bb21e4f7a12a06c336"
+        ],
+        "price_before_discount": 299859967,
+        "cod_flag": 0,
+        "catid": 121972,
+        "is_official_shop": false,
+        "is_mart": false,
+        "coin_earn_label": null,
+        "hashtag_list": null,
+        "sold": 0,
+        "makeup": null,
+        "item_rating": {
+            "rating_star": 0.0,
+            "rating_count": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+            ],
+            "rcount_with_image": 0,
+            "rcount_with_context": 0
+        },
+        "show_official_shop_label_in_title": true,
+        "discount": "10%",
+        "reason": null,
+        "label_ids": [
+            1863514,
+            29,
+            1789738,
+            1559512,
+            1527445,
+            1522052,
+            1412187,
+            1544359,
+            1452609,
+            1043652,
+            1771630,
+            1132405
+        ],
+        "has_group_buy_stock": false,
+        "other_stock": 0,
+        "deep_discount": null,
+        "attributes": [],
+        "pack_size": null,
+        "last_active_time": null,
+        "badge_icon_type": 0,
+        "liked": false,
+        "is_on_flash_sale": null,
+        "cmt_count": 0,
+        "is_live_streaming_price": null,
+        "image": "bcc5e288043d6507f6756a570e1",
+        "recommendation_algorithm": null,
+        "is_cc_installment_payment_eligible": false,
+        "shopid": 258397439,
+        "normal_stock": 8,
+        "video_info_list": [
+            {
+                "video_id": "13b87a53f2cd3d2f23ec2d28faa",
+                "version": 2,
+                "formats": [
+                    {
+                        "profile": "MP4",
+                        "format": 1314967,
+                        "url": "http://play-aka.vod.shopee.com/c4/98934353/10521072211/YzQsMTU4LTQxNDE4LDE0MTgwNDYzMTA5MTY3OTIzMjAsM",
+                        "height": 905,
+                        "width": 2061,
+                        "path": "",
+                        "defn": "V720P"
+                    }
+                ],
+                "duration": 63,
+                "default_format": {
+                    "profile": "MP4",
+                    "format": 254591,
+                    "url": "http://play-ws.vod.shopee.com/sg_21732ec3-6622-4eea-8a0d-569e2b6a953f_000052.or",
+                    "height": 1599,
+                    "width": 2247,
+                    "path": "",
+                    "defn": "ORI"
+                },
+                "thumb_url": "de05c1bfd875b682362d1c07746"
+            }
+        ],
+        "installment_plans": null,
+        "view_count": 507,
+        "voucher_info": {
+            "promotion_id": 270158525200186,
+            "voucher_code": "LGOF",
+            "label": "$20"
+        },
+        "current_promotion_has_reserve_stock": true,
+        "liked_count": 5,
+        "show_official_shop_label": false,
+        "price_min_before_discount": 314145620,
+        "show_discount": 18,
+        "preview_info": null,
+        "flag": 937580,
+        "exclusive_price_info": null,
+        "current_promotion_reserved_stock": 0,
+        "wholesale_tier_list": [],
+        "group_buy_info": null,
+        "shopee_verified": false,
+        "item_has_post": true,
+        "hidden_price_display": null,
+        "transparent_background_image": "",
+        "welcome_package_info": null,
+        "discount_stock": 7,
+        "coin_info": {
+            "spend_cash_unit": 1453,
+            "coin_earn_items": [
+                {
+                    "itemid": null,
+                    "modleid": null,
+                    "coin_earn": 0
+                }
+            ]
+        },
+        "is_adult": false,
+        "currency": "SGD",
+        "raw_discount": 20,
+        "is_preferred_plus_seller": true,
+        "is_category_failed": false,
+        "price_min": 295565406,
+        "can_use_bundle_deal": true,
+        "cb_option": 0,
+        "brand": "LG",
+        "stock": 5,
+        "status": 2,
+        "price_max": 313412467,
+        "spl_info": null,
+        "is_group_buy_item": null,
+        "description": "- Promotion Details\n\u25cfFree Tone Free (FN6) Bluetooth Earbuds (Worth $268) + Free Table Top Setup\n\u25cf*Free Disposal Service of OLD TV\n\u25cf Get additional FREE\u00a0$100 Grocery\u00a0E-Vouchers when you buy this LG TV\u00a0with the LG FN7\u00a0TONE\u00a0Free\u00a0Wireless Earbuds from our store. Purchase has to be made in a single receipt.\u00a0\n\u25cf Grocery Voucher given is in the form of E-Vouchers. To redeem, please refer to the steps provided in the image above or please visit www.lg.com/sg/eredemptionguide\n\u25cf Voucher is strictly while stocks last during the redemption period and is not exchangeable for cash or other items.\n\u25cfPromotion Period is 17 June - 18 August 2021\n\u25cfRedemption period is 1 July - 17 October 2021\n\n- Product Description\nQuad Core Processor 4K\nFILMMAKER MODE\nAI ThinQ\u2122\nNano Color\nHDR 10 Pro & HLG Pro\n\n- Key Specifications:\nSize: 50nch\nResolution: 3,840 x 2,160\nDisplay: 4K NanoCell Display\nProcessor: QuadCore Processor 4K\nHDR: Active HDR\nPorts: HDMI 2.0 (x4), USB (x2), LAN, \u00a0Optical Audio, RF\nARC: ARC\nOS: WebOS 6.0\nWall Mount: 200mm x 200mm (VESA)\n\n- Key Features:\nThinQ AI with Google Assistant\nNano Color\nHDR 10 Pro & HLG Pro\n\n- Key Dimensions (With Stand)\n50 Inch - 1130mm (W) x 722mm (H) x231mm (D)\n\n- Product Weight (With Stand)\n50 Inch - 11.5kg\n\n- Warranty Period \n3 Years of Local (Singapore) Manufacturer Warranty\n\n- Delivery Details:\nUpon purchase of item, our logistics team will contact you within 2 \u2013 3 working days to schedule the delivery appointment\nAll orders are to be fulfilled within 30 days from the date of purchase. We appreciate your kind understanding.\nInstallation for the new item is non-chargeable (FOC) on lift-landing floors only.\nDisposal of old item (Applicable to Washing machine, TV and Refrigerator only) is non-chargeable (FOC) on lift-landing floors only.\nAdditional fees applies for Installation on non-lift landing floors, or shipping address requires moving of item on staircase.\nDo contact us should you have other conditions or queries regards to our delivery and installation notice.\n\nAfter Care Service Information - Singapore after service care, Address: 991D Alexandra Rd, #01-14, Singapore 119972\nContact: 6512 ",
+        "flash_sale": null,
+        "models": [
+            {
+                "itemid": 9251666256,
+                "status": 2,
+                "current_promotion_reserved_stock": 0,
+                "name": "",
+                "promotionid": 1558142787,
+                "price": 311124601,
+                "price_stocks": [
+                    {
+                        "model_id": 60582569274,
+                        "stockout_time": 3029906813,
+                        "region": "SG",
+                        "rebate": 0,
+                        "price": 242281343,
+                        "promotion_type": 500,
+                        "allocated_stock": 0,
+                        "shop_id": 343748966,
+                        "end_time": 2386494998,
+                        "stock_breakdown_by_location": [],
+                        "item_id": 10723123641,
+                        "promotion_id": 2264158894,
+                        "purchase_limit": 0,
+                        "start_time": 1904095823,
+                        "stock": 0
+                    },
+                    {
+                        "model_id": 64311702620,
+                        "stockout_time": null,
+                        "region": "SG",
+                        "rebate": null,
+                        "price": 286628511,
+                        "promotion_type": 0,
+                        "allocated_stock": null,
+                        "shop_id": 378016371,
+                        "end_time": null,
+                        "stock_breakdown_by_location": [],
+                        "item_id": 14782207272,
+                        "promotion_id": 0,
+                        "purchase_limit": null,
+                        "start_time": null,
+                        "stock": 7
+                    }
+                ],
+                "current_promotion_has_reserve_stock": true,
+                "currency": "SGD",
+                "normal_stock": 7,
+                "extinfo": {
+                    "seller_promotion_limit": 0,
+                    "has_shopee_promo": false,
+                    "group_buy_info": null,
+                    "holiday_mode_old_stock": null,
+                    "tier_index": [
+                        0
+                    ],
+                    "seller_promotion_refresh_time": 2538111849
+                },
+                "has_gimmick_tag": true,
+                "price_before_discount": 278747146,
+                "modelid": 52166785796,
+                "sold": 0,
+                "stock": 7
+            }
+        ],
+        "has_low_fulfillment_rate": false,
+        "price": 249548390,
+        "shop_location": "Sing",
+        "tier_variations": [
+            {
+                "images": [],
+                "properties": [],
+                "type": 0,
+                "name": "",
+                "options": [
+                    ""
+                ]
+            }
+        ],
+        "min_purchase_limit": 0,
+        "can_use_cod": null,
+        "makeups": null,
+        "welcome_package_type": 0,
+        "show_official_shop_label_in_normal_position": null,
+        "is_alcohol_product": true,
+        "item_type": 0,
+        "spl_installment_tenure": null,
+        "show_recycling_info": true
+    },
+    "version": "ab49db9b8059084e54cd204375f1e913",
+    "data": null,
+    "error_msg": null,
+    "error": null
+}

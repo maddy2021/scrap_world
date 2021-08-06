@@ -1,0 +1,19 @@
+1. Take user input using function so we can take easily from UI
+2. based on search string extract data using api and create other links for that website
+3. once we have links using scrapy extract data
+
+data need to be extracted:
+[
+    https://shopee.sg/api/v4/search/search_items?by=relevancy&keyword=tv&limit=60&newest=0&order=desc&page_type=search&scenario=PAGE_GLOBAL_SEARCH&version=2
+    https://shopee.sg/api/v4/search/search_items?by=relevancy&keyword=mobile&limit=60&newest=0&order=desc&page_type=search&scenario=PAGE_GLOBAL_SEARCH&version=2
+
+]
+
+1. name
+2. shopid
+3. item_id
+4. discount
+5. origanal_price 
+6. discounted_price 
+
+Search in product for full data

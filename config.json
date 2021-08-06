@@ -1,0 +1,10 @@
+[
+    {
+        "search_string" : ["Tv","Mobile"],
+        "website": "https://shopee.sg/"
+    },
+    {
+        "search_string" : ["Tv","computer"],
+        "website" : "https://www.lazada.sg/"
+    }
+]
