@@ -22,23 +22,31 @@ class ShopeeScraper():
 
     def get_item_links(self):
         for data in self.search_data:
-            search_link = f"https://shopee.sg/api/v4/search/search_items?by=relevancy&keyword={data}&limit=60&newest=0&order=desc&page_type=search&scenario=PAGE_GLOBAL_SEARCH&version=2"
-            search_data = requests.get(search_link, headers=headers) # http request
-            search_json_data = search_data.json()
-            items_data = search_json_data["items"]
-            # first_item = items_data[0]
-            count = 0
-            for item in items_data:
-                if(count<3):
-                    print("processing count:"+str(count))
-                    shop_id = item["item_basic"]["shopid"]
-                    item_id = item["item_basic"]["itemid"]
-                    item_link = f"https://shopee.sg/api/v2/item/get?itemid={item_id}&shopid={shop_id}"
-                    item_object = Item_Obj()
-                    item_object.set_link(item_link)
-                    self.scrap_item_data(item_link,item_object)
-                    self.scraped_items.append(item_object.__dict__)
-                    count = count + 1
+            new_count = 0
+            limit = 60
+            total_count = 1
+            while new_count <= total_count:
+                print("total count"+str(total_count))
+                print("new count"+str(new_count))
+                search_link = f"https://shopee.sg/api/v4/search/search_items?by=relevancy&keyword={data}&limit={limit}&newest={new_count}&order=desc&page_type=search&scenario=PAGE_GLOBAL_SEARCH&version=2"
+                search_data = requests.get(search_link, headers=headers) # http request
+                search_json_data = search_data.json()
+                items_data = search_json_data["items"]
+                total_count = search_json_data["total_count"]
+                # first_item = items_data[0]
+                count = 0
+                for item in items_data:
+                    if(count<5):
+                        print("processing count:"+str(count))
+                        shop_id = item["item_basic"]["shopid"]
+                        item_id = item["item_basic"]["itemid"]
+                        item_link = f"https://shopee.sg/api/v2/item/get?itemid={item_id}&shopid={shop_id}"
+                        item_object = Item_Obj()
+                        item_object.set_link(item_link)
+                        self.scrap_item_data(item_link,item,item_object)
+                        self.scraped_items.append(item_object.__dict__)
+                        count = count + 1
+                new_count = new_count + 60
             item_data_json = self.scraped_items
             file_path = os.path.join("resource",self.domain_name,data)
             with open(file_path+'/item_data.json', 'w', encoding='utf-8') as fp:
@@ -46,14 +54,14 @@ class ShopeeScraper():
             self.scraped_items = []
 
 
-
-    def scrap_item_data(self,item_link,item_object: Item_Obj):
+    def scrap_item_data(self,item_link,item,item_object: Item_Obj):
         item_data = requests.get(item_link,headers=headers).json()
         self.scrape_name(item_data,item_object)
         self.scrape_desc(item_data,item_object)
         self.scrape_brand(item_data,item_object)
         self.scrape_discount(item_data,item_object)
-    
+        self.scrape_org_price(item,item_object)
+        self.scrape_new_price(item,item_object)
 
     def scrape_name(self,item_data,item_object: Item_Obj):
         item_name = item_data["item"]["name"]
@@ -61,13 +69,31 @@ class ShopeeScraper():
     
     # def scrape_link(self,item_data,item_object):
     #     self.link = link
+    def scrape_org_price(self,item_data,item_object:Item_Obj):
+        try:
+            item_minprice = str(item_data["item_basic"]["price_min_before_discount"]/100000)
+        except:
+            item_minprice = ""
+        try:
+            item_maxprice = str(item_data["item_basic"]["price_max_before_discount"]/100000)
+        except:
+            item_maxprice = ""
+        item_object.set_org_price("-".join([item_minprice,item_maxprice]))
 
-    # def scrape_org_price(self,item_data,item_object):
-    #     item_price = item_data["item"][""]
-    #     self.org_price = org_price
-
-    # def scrape_new_price(self,item_data,item_object):
-    #     self.new_price = new_price
+    def scrape_new_price(self,item_data,item_object: Item_Obj):
+        try:
+            item_price = str(item_data["item_basic"]["price"]/100000)
+        except:
+            item_price = ""
+        try:
+            item_minprice = str(item_data["item_basic"]["price_min"]/100000)
+        except:
+            item_minprice = ""
+        try:
+            item_maxprice = str(item_data["item_basic"]["price_max"]/100000)
+        except:
+            item_maxprice = ""
+        item_object.set_new_price("-".join([item_minprice,item_maxprice]))
     
     def scrape_desc(self,item_data,item_object: Item_Obj):
         item_desc = item_data["item"]["description"]
@@ -80,8 +106,7 @@ class ShopeeScraper():
     def scrape_discount(self,item_data,item_object: Item_Obj):
         item_discount = item_data["item"]["discount"]
         item_object.set_discount(item_discount)
-        
-
+    
         
 
 
