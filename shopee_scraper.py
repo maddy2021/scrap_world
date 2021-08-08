@@ -38,7 +38,7 @@ class ShopeeScraper():
                 items_data = search_json_data["items"]
                 total_count = search_json_data["total_count"]
                 # first_item = items_data[0]
-                count = 0
+                # count = 0 
                 item_url_list = [f'https://shopee.sg/api/v2/item/get?itemid={item["item_basic"]["itemid"]}&shopid={item["item_basic"]["shopid"]}' for item in items_data ]
                 print(f'Under process url count {len(item_url_list)}')
                 threads = min(MAX_THREADS, len(item_url_list))
@@ -62,6 +62,8 @@ class ShopeeScraper():
         self.scrape_discount(item_data,item_object)
         self.scrape_org_price(item,item_object)
         self.scrape_new_price(item,item_object)
+        self.scrape_rating(item,item_object)
+        self.scrape_categories(item_data,item_object) 
         self.scraped_items.append(item_object.__dict__)
 
     def scrape_name(self,item_data,item_object: Item_Obj):
@@ -106,9 +108,12 @@ class ShopeeScraper():
         item_discount = item_data["item"]["discount"]
         item_object.set_discount(item_discount)
     
-        
+    def scrape_rating(self,item_data,item_object: Item_Obj):
+        item_rating = item_data["item_basic"]["item_rating"]["rating_star"]
+        item_object.set_rating(item_rating)
 
-
-
-
-    
+    def scrape_categories(self,item_data,item_object: Item_Obj):
+        bread_crumbs=[]
+        for data in item_data["item"]["categories"]:
+            bread_crumbs.append(data["display_name"])
+        item_object.set_categories(" >> ".join(bread_crumbs))
