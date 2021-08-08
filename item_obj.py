@@ -32,3 +32,4 @@ class Item_Obj():
 
     def set_rating(self,rating):
         self.rating = rating
+        
