@@ -1,5 +1,5 @@
 class Item_Obj():
-    def __init__(self, name="", link="", org_price="", new_price="", desc="",brand="",discount="",rating=""):
+    def __init__(self, name="", link="", org_price="", new_price="", desc="",brand="",discount="",rating="", categories=""):
         self.name = name
         self. link = link
         self.org_price = org_price
@@ -8,6 +8,7 @@ class Item_Obj():
         self.brand = brand
         self.discount = discount
         self.rating = rating
+        self.categories= categories
 
     def set_name(self,name):
         self.name = name
@@ -33,3 +34,6 @@ class Item_Obj():
     def set_rating(self,rating):
         self.rating = rating
         
+    def set_categories(self,categories):
+        self.categories = categories
+   
