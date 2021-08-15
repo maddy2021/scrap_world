@@ -1,3 +1,13 @@
+Lazada.sg
+1. For this first we need all products links or we can scrap page by page and store data in json
+2. Its quite time taking to make this structure custom better to use existing framework (like scrapy)
+Steps:
+1. Search product : https://www.lazada.sg/catalog/?_keyori=ss&from=input&page=1&q={keyword}&sort=popularity
+2. One by one scrape data for all the links from the page and store it in Item object
+3. Print result in json file in perticular folder
+
+
+Shopee.sg
 1. Take user input using function so we can take easily from UI
 2. based on search string extract data using api and create other links for that website
 3. once we have links using scrapy extract data
@@ -17,3 +27,8 @@ data need to be extracted:
 6. discounted_price 
 
 Search in product for full data
+
+
+
+install req command:
+pip install -r requirements.txt
