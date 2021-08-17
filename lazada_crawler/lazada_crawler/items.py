@@ -17,4 +17,5 @@ class LazadaCrawlerItem(scrapy.Item):
     discount = scrapy.Field()
     rating = scrapy.Field()
     categories = scrapy.Field()
+    spec = scrapy.Field()
     pass
