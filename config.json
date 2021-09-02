@@ -6,5 +6,13 @@
     {
         "search_string" : ["Tv","computer"],
         "website" : "https://www.lazada.sg/"
+    },
+    {
+        "search_string": ["refrigerators","AC","smart mobile phones","Hair Dryers","WM","Laptops","fans","shavers","Hair Sylers"],
+        "website" : "https://www.flipkart.com/"
+    },
+    {
+        "search_string": ["refrigerators","AC","smart mobile phones","Hair Dryers","WM","Laptops","fans","shavers","Hair Sylers","tv"],
+        "website" : "https://www.tatacliq.com/"
     }
 ]

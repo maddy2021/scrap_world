@@ -1,4 +1,4 @@
-# Scrapy settings for lazada_crawler project
+# Scrapy settings for amazon_crawler project
 #
 # For simplicity, this file contains only settings considered important or
 # commonly used. You can find more settings consulting the documentation:
@@ -7,34 +7,33 @@
 #     https://docs.scrapy.org/en/latest/topics/downloader-middleware.html
 #     https://docs.scrapy.org/en/latest/topics/spider-middleware.html
 
-BOT_NAME = 'lazada_crawler'
+BOT_NAME = 'amazon_crawler'
 
-SPIDER_MODULES = ['lazada_crawler.spiders']
-NEWSPIDER_MODULE = 'lazada_crawler.spiders'
+SPIDER_MODULES = ['amazon_crawler.spiders']
+NEWSPIDER_MODULE = 'amazon_crawler.spiders'
 
 
 # Crawl responsibly by identifying yourself (and your website) on the user-agent
-#USER_AGENT = 'lazada_crawler (+http://www.yourdomain.com)'
-USER_AGENT = 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.131 Safari/537.36'
+#USER_AGENT = 'amazon_crawler (+http://www.yourdomain.com)'
+USER_AGENT = 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.121 Safari/537.36'
+
 
 # Obey robots.txt rules
 ROBOTSTXT_OBEY = False
 
-# PROXY_POOL_ENABLED = True
-
 # Configure maximum concurrent requests performed by Scrapy (default: 16)
-CONCURRENT_REQUESTS = 8
+CONCURRENT_REQUESTS = 4
 
 # Configure a delay for requests for the same website (default: 0)
 # See https://docs.scrapy.org/en/latest/topics/settings.html#download-delay
 # See also autothrottle settings and docs
-# DOWNLOAD_DELAY = 0.25
+DOWNLOAD_DELAY = 0.25
 # The download delay setting will honor only one of:
-# CONCURRENT_REQUESTS_PER_DOMAIN = 10
-# CONCURRENT_REQUESTS_PER_IP = 16
+#CONCURRENT_REQUESTS_PER_DOMAIN = 16
+#CONCURRENT_REQUESTS_PER_IP = 16
 
 # Disable cookies (enabled by default)
-# COOKIES_ENABLED = False
+#COOKIES_ENABLED = False
 
 # Disable Telnet Console (enabled by default)
 #TELNETCONSOLE_ENABLED = False
@@ -48,16 +47,14 @@ CONCURRENT_REQUESTS = 8
 # Enable or disable spider middlewares
 # See https://docs.scrapy.org/en/latest/topics/spider-middleware.html
 #SPIDER_MIDDLEWARES = {
-#    'lazada_crawler.middlewares.LazadaCrawlerSpiderMiddleware': 543,
+#    'amazon_crawler.middlewares.AmazonCrawlerSpiderMiddleware': 543,
 #}
 
 # Enable or disable downloader middlewares
 # See https://docs.scrapy.org/en/latest/topics/downloader-middleware.html
-# DOWNLOADER_MIDDLEWARES = {
-# #    'lazada_crawler.middlewares.LazadaCrawlerDownloaderMiddleware': 543,
-#     'rotating_proxies.middlewares.RotatingProxyMiddleware': 610,
-#     'rotating_proxies.middlewares.BanDetectionMiddleware': 620,
-# }
+#DOWNLOADER_MIDDLEWARES = {
+#    'amazon_crawler.middlewares.AmazonCrawlerDownloaderMiddleware': 543,
+#}
 
 # Enable or disable extensions
 # See https://docs.scrapy.org/en/latest/topics/extensions.html
@@ -68,18 +65,16 @@ CONCURRENT_REQUESTS = 8
 # Configure item pipelines
 # See https://docs.scrapy.org/en/latest/topics/item-pipeline.html
 #ITEM_PIPELINES = {
-#    'lazada_crawler.pipelines.LazadaCrawlerPipeline': 300,
+#    'amazon_crawler.pipelines.AmazonCrawlerPipeline': 300,
 #}
 
 # Enable and configure the AutoThrottle extension (disabled by default)
 # See https://docs.scrapy.org/en/latest/topics/autothrottle.html
-# AUTOTHROTTLE_ENABLED = True
+#AUTOTHROTTLE_ENABLED = True
 # The initial download delay
-# AUTOTHROTTLE_START_DELAY = 5
-# AUTOTHROTTLE_START_DELAY = 2
+#AUTOTHROTTLE_START_DELAY = 5
 # The maximum download delay to be set in case of high latencies
-# AUTOTHROTTLE_MAX_DELAY = 60
-# AUTOTHROTTLE_MAX_DELAY = 10
+#AUTOTHROTTLE_MAX_DELAY = 60
 # The average number of requests Scrapy should be sending in parallel to
 # each remote server
 #AUTOTHROTTLE_TARGET_CONCURRENCY = 1.0
@@ -93,8 +88,3 @@ CONCURRENT_REQUESTS = 8
 #HTTPCACHE_DIR = 'httpcache'
 #HTTPCACHE_IGNORE_HTTP_CODES = []
 #HTTPCACHE_STORAGE = 'scrapy.extensions.httpcache.FilesystemCacheStorage'
-# ROTATING_PROXY_LIST = [
-#     'https://www.expthings.com:8080', 
-#     'https://www.adppinfotech.com'
-# ]
-# ROTATING_PROXY_LIST_PATH = 'E:\\scrap_world\\scrap_world\\lazada_crawler\\my_proxy.txt'
